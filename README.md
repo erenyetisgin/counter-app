@@ -1,1 +1,2 @@
-# Counter App using React.
+# Counter App
+A simple counter application using React.
