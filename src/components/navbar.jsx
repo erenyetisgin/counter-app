@@ -4,13 +4,9 @@ import React from "react";
 const Navbar = ({ totalCounters }) => {
   console.log("Navbar - Render");
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <span className="badge badge-pill badge-secondary">
-            {totalCounters}
-          </span>
-        </a>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">{totalCounters}</span>
       </div>
     </nav>
   );

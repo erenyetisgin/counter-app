@@ -50,10 +50,12 @@ class App extends Component {
     console.log("App - Render");
     return (
       <React.Fragment>
-        <NavBar
-          totalCounters={this.state.counters.filter((c) => c.value > 0).length}
-        />
         <main className="container">
+          <NavBar
+            totalCounters={
+              this.state.counters.filter((c) => c.value > 0).length
+            }
+          />
           <Counters
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
