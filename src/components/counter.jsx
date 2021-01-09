@@ -15,7 +15,16 @@ class Counter extends Component {
   //   this.setState({ value: this.state.value + 1 });
   // };
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("PrevProps", prevProps);
+    console.log("PrevState", prevState);
+    // if (prevProps.counter.value !== this.props.counter.value) {
+    //   // ajax call and get new data from server
+    // }
+  }
+
   render() {
+    console.log("Counter - Render");
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
